@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="Shenhuiti">
+  <meta name="Keywords" content="form table input">
+  <meta name="Description" content="form table input">
+  <title>form table input</title>
+  <style>
+		body{
+			margin:0;
+			font: 14px arial,"microsoft yahei",serif;	
+		}		
+		#register{
+			box-sizing:border-box;
+			margin: 0 auto;
+			padding: 30px;
+			background: #293243;
+			width: 700px;
+			height:792px;					
+			color: #d7d7d7;
+		}		
+		h2, p{		
+			text-align:center;
+			margin:10px auto;
+		}		
+		.input-text, select{
+			margin:6px;
+			padding-left:5px;
+			background:#0f1115;
+			border:1px solid #666;
+			border-radius:3px;
+			width:240px;
+			height:34px;			
+			line-height:34px;
+			color:#fff;
+		}
+		select{			
+			width:247px; /*special setting*/
+		}
+		label input{
+			margin:0 9px;		
+		}
+		.user-image{
+			margin:7px;
+		}
+		.user-agree{			
+			text-align:center;
+			padding:15px 0;
+		}
+		.user-agree a{
+			text-decoration:none;
+			color:green;			
+		}
+		.user-agree a:hover{
+			color:#fff;
+		}
+		.button-center{			
+			text-align:center;
+			padding:5px;
+		}
+		.button{
+			display:inline-block;
+			margin:0 10px;
+			padding:0 20px;			
+			border:1px solid #aaa;
+			border-radius:3px;
+			background:#098cc8;			
+			height:32px;			
+			font-size:18px;
+			color:#fff;
+			cursor:pointer;
+		}
+		.button:hover{
+			background:#2bb7f8;
+		}
+  </style>
+ </head>
+ <body>
+		<form id="register" action="#" method="post" name="register">
+			<h2>创建帐号</h2>
+			<p>本游戏已经加入防沉迷设置，请您在注册的时候填写真实信息。</p>		
+			<table>
+				<tr>
+					<td>*用户名：</td>
+					<td><input class="input-text" type="text" name="user-name" placeholder="请输入您的用户名" required></td>
+					<td>只能使用英文或数字，最短5位，最长16位</td>
+				</tr>
+				<tr>
+					<td>*用户密码：</td>
+					<td><input class="input-text" type="password" name="user-password" required></td>
+					<td>只能使用英文或数字，最短5位，最长16位</td>
+				</tr>
+				<tr>
+					<td>*密码确认：</td>
+					<td><input class="input-text" type="password" name="user-password" required></td>
+					<td>再次输入密码</td>
+				</tr>
+				<tr>
+					<td>密码问题：</td>
+					<td>
+						<select>
+							<option selected>选择找回密码的问题</option>
+							<option>您的出生地在哪里？</option>
+							<option>您的小学学校叫什么名？</option>
+							<option>您的初中班主任叫什么名？</option>
+						</select>
+					</td>
+					<td>密码丢失时，通过此问题找回密码</td>
+				</tr>
+				<tr>
+					<td>密码答案：</td>
+					<td><input class="input-text" type="text" name="user-answer"></td>
+					<td>密码丢失时，通过此问题找回密码</td>
+				</tr>
+				<tr>
+					<td>*电子邮箱：</td>
+					<td><input class="input-text" type="email" name="user-email" placeholder="输入您的邮箱地址" required></td>
+					<td>可以享受如找回密码等服务</td>
+				</tr>
+				<tr>
+					<td>真实姓名：</td>
+					<td><input class="input-text" type="text" name="user-truename"></td>
+					<td>2-10个字符限制</td>
+				</tr>
+				<tr>
+					<td>性别：</td>
+					<td>
+						<label><input type="radio" value="boy" name="user-sex">帅哥</label>
+						<label><input type="radio" value="girl" name="user-sex">美女</label>
+					</td>
+					<td>请选择性别</td>
+				</tr>
+				<tr>
+					<td>出生日期：</td>
+					<td><input class="input-text" type="date" name="user-birthday"></td>
+					<td>请选择您的生日</td>
+				</tr>
+				<tr>
+					<td>年龄：</td>
+					<td><input class="input-text" type="number" min="0" max="99"</td>
+					<td>请填写您的年龄</td>
+				</tr>
+				<tr>
+					<td>爱好：</td>
+					<td>
+						<label><input type="checkbox" value="study">学习</label>
+						<label><input type="checkbox" value="sleeping">睡觉</label>
+						<label><input type="checkbox" value="surfing">冲浪</label>
+					</td>
+					<td>请选择您的爱好</td>
+				</tr>
+				<tr>
+					<td>头像设置：</td>
+					<td><input class="user-image" type="file" name="user-image"></td>
+					<td>浏览文件设定您的头像</td>
+				</tr>
+				<tr>
+					<td class="user-agree" colspan="3">
+						<label>
+							<input type="checkbox" value="user-agree">我已阅读并同意<a href="#" target="_blank">XXX协议</a>
+						</label>
+					</td>					
+				</tr>
+				<tr>
+					<td class="button-center" colspan="3">
+						<input class="button" type="submit" value="提交资料">
+						<input class="button" type="reset" value="取消重写">
+					</td>					
+				</tr>
+			</table>
+		</form>
+ </body>
+</html>
