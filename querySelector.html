@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script>
+		function myFunction(){
+			var x=document.getElementById('myDIV');
+			x.querySelector('a[target]').style.border='3px solid brown';
+		}
+  </script>
+ </head>
+ <body>
+		<div id='myDIV'>
+			<a href='http://www.w3cschool.cc'>w3cschool</a>
+			<a href='http://www.disney.com' target='_blank'>disney</a>
+			<a href='http://www.wikipedia.org' target='_top'>wikipedia</a>
+		</div>
+		<p>点击以下按钮设置a标签中第一个属性中含有'target'的链接为棕色边框</p>
+		<button onclick='myFunction()'>点击设置棕色边框</button>
+ </body>
+</html>
