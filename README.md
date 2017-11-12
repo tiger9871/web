@@ -1,4 +1,4 @@
 # web
 HTML
 CSS
-Javascript
+JavaScript
