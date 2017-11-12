@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script>
+		function copyText(){
+			document.getElementById('field2').value=document.getElementById('field1').value;
+		}
+  </script>
+ </head>
+ <body>
+		文本框1：<input type='text' id='field1' value='test text'><br>
+		文本框2：<input type='text' id='field2'><br><br>
+		<button onclick='copyText()'>复制文本</button>
+		<p>点击按钮把文本框1中的内容复制到文本框2中</p>
+ </body>
+</html>
