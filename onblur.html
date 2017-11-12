@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ <script>
+		function upperCase(){
+			var t=document.getElementById('fname').value;
+			document.getElementById('fname').value=t.toUpperCase();
+		}
+ </script>
+ </head>
+ <body>
+		<p>输入小写英文再移开光标后成变大写</p>
+		<input type='text' id='fname' onblur='upperCase()'>
+ </body>
+</html>
