@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>form override</title>
+ </head>
+ <body>
+		<form action='#' method='get' id='user-form'>
+			邮箱：<input type='email' name='userid'><br>
+			<input type='submit' value='提交'><br>
+			<input type='submit' value='以管理员身份提交' formaction='##'><br>
+			<input type='submit' value='提交未经验证' formnovalidate='true'><br>
+		</form>
+ </body>
+</html>
