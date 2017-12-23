@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>taichi3</title>
+  <style>
+		*{
+			margin:0;
+		}
+		.taichi{
+			display:flex;
+			align-items:center;
+			margin:100px auto;
+			width:400px;
+			height:400px;		
+			background:linear-gradient(black 50%,gray 50%);
+			border-radius:50%;
+		}
+		.left, .right{
+			width:50px;
+			height:50px;
+			border-radius:50%;
+		}
+		.left{
+			background:gray;
+			border:75px solid black;
+			animation:change 1s infinite alternate -1s linear;
+			transform-origin:left;
+		}
+		.right{
+			background:black;
+			border:75px solid gray;
+			animation:change 1s infinite alternate linear;
+			transform-origin:right;
+		}
+		@keyframes change{
+			0%{
+				transform:scale(1.5);
+			}
+			100%{
+				transform:scale(.5);
+			}
+		}
+  </style>
+ </head>
+ <body>
+		<div class='taichi'>
+			<div class='left'></div>
+			<div class='right'></div>
+		</div>
+ </body>
+</html>
