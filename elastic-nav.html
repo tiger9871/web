@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>elastic-nav</title>
+  <style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		html{
+			height:100%;
+		}
+		body{
+			height:100%;	
+			display:flex;
+			justify-content:center;
+			align-items:center;
+		}
+		.elastic-nav{			
+			width:1004px;
+			height:242px;
+			background:gray;
+		}
+		ul{
+			display:flex;
+			list-style:none;			
+		}
+		li{
+			margin-top:60px;
+			text-align:center;
+			margin-left:22px;
+		}
+		a{
+			text-decoration:none;			
+		}
+		a:hover{
+			color:orange;			
+		}
+		a div{			
+			width:223px;
+			height:126px;
+			background:hsla(180,100%,20%, .6);
+		}
+		a div:hover{
+			animation:elastic 1s;
+		}
+		a span{			
+			font-family:'microsoft yahei';
+			font-size:14px;			
+		}
+		@keyframes elastic{
+			0%{
+				transform:scale(1,1);
+			}
+			50%{
+				transform:scale(1.6,.8);
+			}
+			60%{
+				transform:scale(.8,1.6);
+			}
+			70%{
+				transform:scale(1.4,.9);
+			}
+			80%{
+				transform:scale(.9,1.4);
+			}
+			90%{
+				transform:scale(1.2,.95);
+			}
+			100%{
+				transform:scale(1,1);
+			}
+		}
+  </style>
+ </head>
+ <body>
+		<div  class='elastic-nav'>
+			<ul>
+				<li>
+					<a href='#'>
+						<div></div>
+						<span>elastic-nav-1</span>
+					</a>
+				</li>
+				<li>
+					<a href='#'>
+						<div></div>
+						<span>elastic-nav-2</span>
+					</a>
+				</li>
+				<li>
+					<a href='#'>
+						<div></div>
+						<span>elastic-nav-3</span>
+					</a>
+				</li>
+				<li>
+					<a href='#'>
+						<div></div>
+						<span>elastic-nav-4</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+ </body>
+</html>
