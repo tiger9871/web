@@ -1,0 +1,111 @@
+﻿<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>shake and slide in</title>
+  <style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		.content{
+			position:relative;
+			margin:auto;
+			width:960px;
+			height:415px;
+			border:2px solid cyan;
+		}
+		.content img{
+			position:absolute;
+		}
+		.content img:nth-child(1){
+			left:-800px;
+			top:0;
+			transition:.5s;
+		}
+		.content img:nth-child(1).on{
+			left:-8px;
+		}
+		.content img:nth-child(2){
+			left:-1163px;
+			top:-1px;
+			transition:1s;
+		}
+		.content img:nth-child(2).on{
+			left:163px;
+		}
+		.content img:nth-child(3){
+			left:317px;
+			top:15px;
+			animation:shake .8s;
+		}
+		@keyframes shake{
+			0%{
+				transform:scale(0);
+			}
+			30%{
+				transform:scale(1.2);
+			}
+			40%{
+				transform:scale(.85);
+			}
+			50%{
+				transform:scale(1.15);
+			}
+			60%{
+				transform:scale(.9);
+			}
+			70%{
+				transform:scale(1.1);
+			}
+			80%{
+				transform:scale(.95);
+			}
+			90%{
+				transform:scale(1.05);
+			}
+			100%{
+				transform:scale(1);
+			}
+		}
+		.content img:nth-child(4){
+			left:1558px;
+			top:58px;
+			transition:1s;
+		}
+		.content img:nth-child(4).on{
+			left:558px;
+		}
+		.content img:nth-child(5){
+			left:1756px;
+			top:48px;
+			transition:.5s;
+		}
+		.content img:nth-child(5).on{
+			left:756px;
+		}
+  </style>
+ </head>
+ <body>
+		<div class='content'>
+			<img src='..\img\jpg\cleaner.jpg' alt='cleaner.jpg' width='191' height='312'>
+			<img src='..\img\jpg\MacBook.jpg' alt='MacBook.jpg' width='175' height='328'>
+			<img src='..\img\jpg\kindle.jpg' alt='kindle.jpg' width='254' height='371'>
+			<img src='..\img\jpg\iphone7.jpg' alt='iphone7.jpg' width='206' height='226'>
+			<img src='..\img\jpg\ipad.jpg' alt='ipad.jpg' width='203' height='263'>
+		</div>
+		<script>
+			var content=document.getElementsByClassName('content')[0];
+			var allImg=content.getElementsByTagName('img');
+			window.onload=function(){
+				for(i=0; i<allImg.length; i++){
+					allImg[i].className='on';
+				}
+			}
+		</script>
+ </body>
+</html>
