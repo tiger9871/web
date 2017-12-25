@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>ferriswheel</title>
+  <style>
+		body{
+			margin:0;
+		}
+		.ferriswheel{
+			position:fixed;
+			left:18%;
+			top:6%;
+			width:768px;
+			height:768px;
+			background:url('../img/png/fsw.png');
+			animation:rotate 6s infinite linear;			
+		}
+		.boy, .girl, .shamegirl{
+			position:absolute;			
+			width:130px;
+			height:170px;
+			background:purple;
+			animation:rotate-reverse 6s infinite linear;
+		}
+		.boy{
+			background:url('../img/png/boy.png');
+			left:20px;
+			top:196px;			
+		}
+		.girl{
+			background:url('../img/png/girl.png');
+			left:620px;
+			top:196px;
+		}
+		.shamegirl{
+			background:url('../img/png/shamegirl.png');
+			left:310px;
+			top:634px;
+		}
+		@keyframes rotate{
+			0%{
+				transform:rotate(0deg);
+			}
+			100%{
+				transform:rotate(360deg);
+			}
+		}
+		@keyframes rotate-reverse{
+			0%{
+				transform:rotate(0deg);
+			}
+			100%{
+				transform:rotate(-360deg);
+			}
+		}
+  </style>
+ </head>
+ <body>
+		<div class='ferriswheel'>
+			<div class='boy'></div>
+			<div class='girl'></div>
+			<div class='shamegirl'></div>
+		</div>		
+ </body>
+</html>
